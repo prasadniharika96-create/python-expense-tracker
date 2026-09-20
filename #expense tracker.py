@@ -37,6 +37,9 @@ while(True):
     elif choice==4:
         print("------------AMOUNT LEFT------------")
         balance=Starting_balance-total
+        if balance < 0 :
+            print("!!! YOU ARE EXCEEDING YOUR SPENDING LIMIT !!!")
+            print("YOU HAVE EXCEEDED YOUR LIMIT BY :",balance)
         print("total spent:",Starting_balance,"-",total)
         print("remaining balance:",balance)
 
