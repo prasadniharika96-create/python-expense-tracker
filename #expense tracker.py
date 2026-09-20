@@ -1,14 +1,16 @@
 #expense tracker
 
 expense =[]
-
+Starting_balance= float(input("ENTER YOUR TOTAL AMOUNT YOU HAVE:"))
 while(True):
     print("------EXPENSE TRACKER------")
     print("1. Add Expense")
     print("2. view your expense")
     print("3. total expense")
-    print("4.EXIT")
+    print("4.balance left")
+    print("5.EXIT")
 
+   
 
     choice = int(input(" ENTER YOUR CHOISE: "))
 
@@ -31,6 +33,12 @@ while(True):
         for item in expense:
             total+= (item[1]*item[2])
         print("TOTAL EXPENSE : Rs",total)
+        
+    elif choice==4:
+        print("------------AMOUNT LEFT------------")
+        balance=Starting_balance-total
+        print("total spent:",Starting_balance,"-",total)
+        print("remaining balance:",balance)
 
     elif choice==4:
         print("!!!YOU ARE EXITING EXPENSE TRACKER!!!")
