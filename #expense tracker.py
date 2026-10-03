@@ -43,7 +43,7 @@ while(True):
         print("total spent:",Starting_balance,"-",total)
         print("remaining balance:",balance)
 
-    elif choice==4:
+    elif choice==5:
         print("!!!YOU ARE EXITING EXPENSE TRACKER!!!")
         print("-------THANK YOU-------")
         break
