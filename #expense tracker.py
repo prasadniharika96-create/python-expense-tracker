@@ -3,6 +3,7 @@
 expense =[]
 Starting_balance= float(input("ENTER YOUR TOTAL AMOUNT YOU HAVE:"))
 while(True):
+    total=0
     print("------EXPENSE TRACKER------")
     print("1. Add Expense")
     print("2. view your expense")
@@ -29,7 +30,7 @@ while(True):
 
     elif choice == 3:
         print("---TOTAL EXPENSE---")
-        total=0
+        
         for item in expense:
             total+= (item[1]*item[2])
         print("TOTAL EXPENSE : Rs",total)
